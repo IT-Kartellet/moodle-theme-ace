@@ -7,15 +7,19 @@ body {
   line-height: 1.5em;
 }
 
-/* @group Generic */
-/* @end */
+@media (min-width: 1200px) {
+  /* line 2, ../sass/hardmedia.scss */
+  #block-region-side-post {
+    width: 25.076923%;
+  }
+}
 /* @group Resets */
-/* line 10, ../sass/ace.scss */
+/* line 7, ../sass/ace.scss */
 body {
   padding: 0;
 }
 
-/* line 13, ../sass/ace.scss */
+/* line 10, ../sass/ace.scss */
 .block {
   padding: 0;
   background-color: initial;
@@ -25,61 +29,82 @@ body {
 }
 
 /* @end */
-/* @group Custom */
-/* line 23, ../sass/ace.scss */
-#page {
-  background: white;
+/* @group Generic */
+/* line 20, ../sass/ace.scss */
+input[type='submit'] {
+  border: 0;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  color: #0293D2;
 }
 
-/* line 26, ../sass/ace.scss */
+/* line 30, ../sass/ace.scss */
+input[type='submit']:hover {
+  background: none;
+  color: #0293D2;
+  text-decoration: underline;
+}
+
+/* @end */
+/* @group Custom */
+/* line 40, ../sass/ace.scss */
+#page-content {
+  border-top: 1px solid #EEE;
+  border-right: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
+  background: #FAF9F9;
+}
+
+/* line 46, ../sass/ace.scss */
 #block-region-side-post, #region-main, #block-region-side-pre {
   padding-top: 20px;
   background: #FAF9F9;
 }
 
-/* line 30, ../sass/ace.scss */
+/* line 50, ../sass/ace.scss */
 #main_header {
   padding: 25px 10px;
 }
 
-/* line 33, ../sass/ace.scss */
+/* line 53, ../sass/ace.scss */
 #region-main {
   background: white;
   padding: 0 25px;
 }
 
-/* line 37, ../sass/ace.scss */
+/* line 57, ../sass/ace.scss */
 div.generalbox h4 {
   margin-top: 30px;
 }
 
-/* line 40, ../sass/ace.scss */
+/* line 60, ../sass/ace.scss */
 #page-footer {
   background: white;
   margin: 0;
-  border-top: 1px solid #eeeeee;
+  border: 0;
 }
 
-/* line 45, ../sass/ace.scss */
+/* line 65, ../sass/ace.scss */
 #block-region-side-pre {
   border-right: 1px solid #EEE;
   margin-right: 0;
   padding-right: 2.7624309392265194%;
+  margin-left: 2.564102564102564%;
 }
 
-/* line 50, ../sass/ace.scss */
+/* line 71, ../sass/ace.scss */
 #block-region-side-post {
-  /*border-left: 1px solid #EEE;*/
   margin-left: 0;
-  padding-left: 2.7624309392265194%;
-  border-top: 1px solid #EEEEEE;
-  border-right: 1px solid #EEEEEE;
+  padding-right: 2%;
 }
 
-/* line 57, ../sass/ace.scss */
+/* line 75, ../sass/ace.scss */
 #region-bs-main-and-pre {
   border-right: 1px solid #EEE;
-  border-top: 1px solid #EEE;
   border-left: 1px solid #EEE;
   padding-left: 10px;
 }

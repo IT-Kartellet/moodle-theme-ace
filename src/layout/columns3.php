@@ -54,7 +54,7 @@ echo $OUTPUT->doctype() ?>
                 <?php echo $OUTPUT->blocks('side-pre', 'span4 desktop-first-column'); ?>
             </div>
         </div>
-        <?php echo $OUTPUT->blocks('side-post', 'span3'); ?>
+        <?php echo $OUTPUT->blocks('side-post', 'span3 pull-right'); ?>
     </div>
 
 </div>
