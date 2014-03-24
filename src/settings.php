@@ -15,7 +15,6 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
-
  * Ace theme settings page
  *
  * @package    theme_ace
@@ -49,7 +48,7 @@ if ($ADMIN->fulltree) {
 			'logo');
 	$setting->set_updatedcallback('theme_reset_all_caches');
 	$mainPage->add($setting);
-	
+
 	// Profile pic to be displayed in header
 	$setting = new admin_setting_configcheckbox('theme_ace/profilepic',
 		get_string('profilepic','theme_ace'),
@@ -57,7 +56,7 @@ if ($ADMIN->fulltree) {
 	    1);
 	$setting->set_updatedcallback('theme_reset_all_caches');
 	$mainPage->add($setting);
-	
+
 	// Custom CSS textarea
 	$setting = new admin_setting_configtextarea('theme_ace/csscustom',
 		get_string('csscustom','theme_ace'),
@@ -65,7 +64,7 @@ if ($ADMIN->fulltree) {
 	    '');
 	$setting->set_updatedcallback('theme_reset_all_caches');
 	$mainPage->add($setting);
-	
+
 	// Fluid or fixed layout
 	$setting = new admin_setting_configselect('theme_ace/fluid',
 			get_string('fluid','theme_ace'),
@@ -75,7 +74,7 @@ if ($ADMIN->fulltree) {
 				 'fluid' => get_string('fluid_fluid','theme_ace')));
 	$setting->set_updatedcallback('theme_reset_all_caches');
 	$mainPage->add($setting);
-		
+
 	// List font combinations
 	$fontCombinations = array("Fjalla One / Average",
 		"Stint Ultra Expanded / Pontano Sans",
@@ -94,7 +93,7 @@ if ($ADMIN->fulltree) {
             $supportedFonts []= trim($font);
         }
     }
-	
+
 	$setting = new admin_setting_ace_font('theme_ace/font',
 			get_string('font','theme_ace'),
 			get_string('fontdesc', 'theme_ace'),
@@ -111,7 +110,7 @@ if ($ADMIN->fulltree) {
 			'');
 	$setting->set_updatedcallback('theme_reset_all_caches');
 	$mainPage->add($setting);
-	
+
 	// Footer message - potentially disclaimer
 	$setting = new admin_setting_confightmleditor('theme_ace/footer',
 			get_string('footer','theme_ace'),
@@ -119,9 +118,8 @@ if ($ADMIN->fulltree) {
 			'');
 	$setting->set_updatedcallback('theme_reset_all_caches');
 	$mainPage->add($setting);
-	
+
 	// Layout selection - at this stage just one frame
-		
 	// Theme colour selector
 	$setting = new admin_setting_configtext('theme_ace/colours',
 			get_string('colours','theme_ace'),
@@ -131,7 +129,7 @@ if ($ADMIN->fulltree) {
     however there is no way to get result so calling it above */
 	$setting->set_updatedcallback('theme_reset_all_caches'); //ace_theme_update_colours
 	$mainPage->add($setting);
-	
+
 	$ADMIN->add('theme_ace', $mainPage);
 
  	// Menu editor - tree design

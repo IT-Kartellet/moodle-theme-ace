@@ -1,0 +1,87 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+/* line 3, ../sass/typography.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12pt;
+  line-height: 1.5em;
+}
+
+/* @group Generic */
+/* @end */
+/* @group Resets */
+/* line 10, ../sass/ace.scss */
+body {
+  padding: 0;
+}
+
+/* line 13, ../sass/ace.scss */
+.block {
+  padding: 0;
+  background-color: initial;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* @end */
+/* @group Custom */
+/* line 23, ../sass/ace.scss */
+#page {
+  background: white;
+}
+
+/* line 26, ../sass/ace.scss */
+#block-region-side-post, #region-main, #block-region-side-pre {
+  padding-top: 20px;
+  background: #FAF9F9;
+}
+
+/* line 30, ../sass/ace.scss */
+#main_header {
+  padding: 25px 10px;
+}
+
+/* line 33, ../sass/ace.scss */
+#region-main {
+  background: white;
+  padding: 0 25px;
+}
+
+/* line 37, ../sass/ace.scss */
+div.generalbox h4 {
+  margin-top: 30px;
+}
+
+/* line 40, ../sass/ace.scss */
+#page-footer {
+  background: white;
+  margin: 0;
+  border-top: 1px solid #eeeeee;
+}
+
+/* line 45, ../sass/ace.scss */
+#block-region-side-pre {
+  border-right: 1px solid #EEE;
+  margin-right: 0;
+  padding-right: 2.7624309392265194%;
+}
+
+/* line 50, ../sass/ace.scss */
+#block-region-side-post {
+  /*border-left: 1px solid #EEE;*/
+  margin-left: 0;
+  padding-left: 2.7624309392265194%;
+  border-top: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+}
+
+/* line 57, ../sass/ace.scss */
+#region-bs-main-and-pre {
+  border-right: 1px solid #EEE;
+  border-top: 1px solid #EEE;
+  border-left: 1px solid #EEE;
+  padding-left: 10px;
+}
+
+/* @end */

@@ -1,0 +1,63 @@
+@import 'variables';
+@import 'typography';
+@import 'icons';
+
+/* @group Generic */
+
+/* @end */
+
+/* @group Resets */
+body {
+  padding: 0;
+}
+.block {
+  padding: 0;
+  background-color: initial;
+  border: 0;
+  border-radius:0;
+  box-shadow: none;
+}
+/* @end */
+
+/* @group Custom */
+#page {
+  background: white;
+}
+#block-region-side-post, #region-main, #block-region-side-pre {
+  padding-top: 20px;
+  background: #FAF9F9;
+}
+#main_header {
+  padding: 25px 10px;
+}
+#region-main {
+  background: white;
+  padding: 0 25px;
+}
+div.generalbox h4{
+  margin-top: 30px;
+}
+#page-footer {
+  background: white;
+  margin: 0;
+  border-top: 1px solid #EEE
+}
+#block-region-side-pre {
+  border-right: 1px solid #EEE;
+  margin-right: 0;
+  padding-right: 2.7624309392265194%;
+}
+#block-region-side-post {
+  /*border-left: 1px solid #EEE;*/
+  margin-left: 0;
+  padding-left: 2.7624309392265194%;
+  border-top: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+}
+#region-bs-main-and-pre {
+  border-right: 1px solid #EEE;
+  border-top: 1px solid #EEE;
+  border-left: 1px solid #EEE;
+  padding-left: 10px;
+}
+/* @end */
