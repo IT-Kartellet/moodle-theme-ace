@@ -7,10 +7,27 @@ body {
   line-height: 1.5em;
 }
 
+/* line 9, ../sass/typography.scss */
+li {
+  margin-bottom: 1.5em;
+}
+
+/* line 12, ../sass/typography.scss */
+.block .header .title h2, .block h3 {
+  color: #2b2b2b;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
 @media (min-width: 1200px) {
   /* line 2, ../sass/hardmedia.scss */
   #block-region-side-post {
     width: 25.076923%;
+  }
+
+  /* line 5, ../sass/hardmedia.scss */
+  #region-main {
+    width: 68.3%;
   }
 }
 /* @group Resets */
@@ -49,9 +66,14 @@ input[type='submit']:hover {
   text-decoration: underline;
 }
 
+/* line 35, ../sass/ace.scss */
+*:focus {
+  outline: 0;
+}
+
 /* @end */
 /* @group Custom */
-/* line 40, ../sass/ace.scss */
+/* line 43, ../sass/ace.scss */
 #page-content {
   border-top: 1px solid #EEE;
   border-right: 1px solid #EEE;
@@ -59,54 +81,54 @@ input[type='submit']:hover {
   background: #FAF9F9;
 }
 
-/* line 46, ../sass/ace.scss */
+/* line 49, ../sass/ace.scss */
 #block-region-side-post, #region-main, #block-region-side-pre {
   padding-top: 20px;
   background: #FAF9F9;
 }
 
-/* line 50, ../sass/ace.scss */
+/* line 53, ../sass/ace.scss */
 #main_header {
   padding: 25px 10px;
 }
 
-/* line 53, ../sass/ace.scss */
+/* line 56, ../sass/ace.scss */
 #region-main {
   background: white;
   padding: 0 25px;
 }
 
-/* line 57, ../sass/ace.scss */
+/* line 60, ../sass/ace.scss */
 div.generalbox h4 {
   margin-top: 30px;
 }
 
-/* line 60, ../sass/ace.scss */
+/* line 63, ../sass/ace.scss */
 #page-footer {
   background: white;
   margin: 0;
   border: 0;
 }
 
-/* line 65, ../sass/ace.scss */
+/* line 68, ../sass/ace.scss */
 #block-region-side-pre {
   border-right: 1px solid #EEE;
   margin-right: 0;
-  padding-right: 2.7624309392265194%;
-  margin-left: 2.564102564102564%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-/* line 71, ../sass/ace.scss */
+/* line 74, ../sass/ace.scss */
 #block-region-side-post {
   margin-left: 0;
-  padding-right: 2%;
+  padding-right: 15px;
 }
 
-/* line 75, ../sass/ace.scss */
+/* line 78, ../sass/ace.scss */
 #region-bs-main-and-pre {
   border-right: 1px solid #EEE;
   border-left: 1px solid #EEE;
-  padding-left: 10px;
+  background: white;
 }
 
 /* @end */
