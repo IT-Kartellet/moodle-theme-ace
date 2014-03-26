@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 $THEME->name = 'ace';
 $THEME->sheets = array('stylesheets/ace');
 $THEME->parents = array('bootstrapbase');
+$THEME->javascripts = array('zepto', 'core');
 $THEME->supportscssoptimisation = false;
 
 $THEME->layouts = array(

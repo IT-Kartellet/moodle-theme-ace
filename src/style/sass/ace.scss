@@ -149,7 +149,7 @@ header {
 /* @end */
 
 /* @group Settings */
-#select2-results-1 li {
+ul.select2-results li {
   margin: 0;
   border-bottom: 1px solid #ebebeb;
 }
@@ -157,4 +157,5 @@ header {
 
 /* @group PostImport */
 @import 'hardmedia';
+@import 'mobile';
 /* @end */

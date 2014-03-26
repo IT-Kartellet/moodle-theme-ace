@@ -17,6 +17,12 @@
     </div>
 </header>
 
+<div class="visible-mobile">
+    <button id="show_navigation">Left</button>
+    <button id="show_sidebar">Right</button>
+    <button id="show_content">Middle</button>
+</div>
+
 <div id="page" class="container-fluid columns-3">
     <div id="page-content" class="row-fluid">
         <div id="page_wrapper" class="span12">
