@@ -50,7 +50,7 @@ input[type='submit']:hover {
 }
 /* @end */
 
-/* @group Custom */
+/* @group Layout */
 #page {
   margin: auto;
   padding: 0;
@@ -67,7 +67,7 @@ input[type='submit']:hover {
     }
 
     #region-main {
-      padding: 15px 40px;
+      padding: 15px 30px;
     }
 
     #block-region-side-pre,
@@ -98,6 +98,27 @@ input[type='submit']:hover {
 }
 #page-footer {
   border: 0;
+}
+div.buttons {
+  margin-top: 20px;
+}
+/* @end */
+
+/* Course */
+.courses .coursebox:hover, .course_category_tree .courses>.paging.paging-morelink:hover {
+  background: #FAF9F9;
+}
+.coursebox>.info>.coursename a {
+  background-image: none;
+  padding-left: 0;
+}
+.coursebox .content .summary, .coursebox .content .coursecat {
+  float: none;
+  width: auto;
+}
+.coursebox {
+  background: #FAF9F9;
+  margin: auto;
 }
 /* @end */
 

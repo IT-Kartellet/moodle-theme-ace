@@ -81,7 +81,7 @@ input[type='submit']:hover {
 }
 
 /* @end */
-/* @group Custom */
+/* @group Layout */
 /* line 54, ../sass/ace.scss */
 #page {
   margin: auto;
@@ -101,7 +101,7 @@ input[type='submit']:hover {
 }
 /* line 69, ../sass/ace.scss */
 #page #page_wrapper #region-main {
-  padding: 15px 40px;
+  padding: 15px 30px;
 }
 /* line 74, ../sass/ace.scss */
 #page #page_wrapper #block-region-side-pre,
@@ -131,6 +131,36 @@ input[type='submit']:hover {
 /* line 99, ../sass/ace.scss */
 #page-footer {
   border: 0;
+}
+
+/* line 102, ../sass/ace.scss */
+div.buttons {
+  margin-top: 20px;
+}
+
+/* @end */
+/* Course */
+/* line 108, ../sass/ace.scss */
+.courses .coursebox:hover, .course_category_tree .courses > .paging.paging-morelink:hover {
+  background: #FAF9F9;
+}
+
+/* line 111, ../sass/ace.scss */
+.coursebox > .info > .coursename a {
+  background-image: none;
+  padding-left: 0;
+}
+
+/* line 115, ../sass/ace.scss */
+.coursebox .content .summary, .coursebox .content .coursecat {
+  float: none;
+  width: auto;
+}
+
+/* line 119, ../sass/ace.scss */
+.coursebox {
+  background: #FAF9F9;
+  margin: auto;
 }
 
 /* @end */
