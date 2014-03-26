@@ -1,9 +1,10 @@
+/* @group PreImport */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 /* line 3, ../sass/typography.scss */
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  font-size: 12pt;
+  font-size: 11pt;
   line-height: 1.5em;
 }
 
@@ -19,13 +20,14 @@ li {
   margin-top: 20px;
 }
 
+/* @end */
 /* @group Resets */
-/* line 7, ../sass/ace.scss */
+/* line 8, ../sass/ace.scss */
 body {
   padding: 0;
 }
 
-/* line 10, ../sass/ace.scss */
+/* line 11, ../sass/ace.scss */
 .block {
   padding: 0;
   background-color: initial;
@@ -36,7 +38,7 @@ body {
 
 /* @end */
 /* @group Generic */
-/* line 20, ../sass/ace.scss */
+/* line 21, ../sass/ace.scss */
 input[type='submit'] {
   border: 0;
   background: none;
@@ -48,68 +50,84 @@ input[type='submit'] {
   color: #0293D2;
 }
 
-/* line 30, ../sass/ace.scss */
+/* line 31, ../sass/ace.scss */
 input[type='submit']:hover {
   background: none;
   color: #0293D2;
   text-decoration: underline;
 }
 
-/* line 35, ../sass/ace.scss */
+/* line 36, ../sass/ace.scss */
 * {
   box-sizing: border-box;
 }
-/* line 38, ../sass/ace.scss */
+/* line 39, ../sass/ace.scss */
 *:focus {
   outline: 0;
 }
 
 /* @end */
 /* @group Custom */
-/* line 45, ../sass/ace.scss */
+/* line 46, ../sass/ace.scss */
 #page {
   margin: auto;
   padding: 0;
   margin-top: 20px;
 }
-/* line 50, ../sass/ace.scss */
+/* line 51, ../sass/ace.scss */
 #page #page_wrapper {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   display: table;
 }
-/* line 55, ../sass/ace.scss */
+/* line 56, ../sass/ace.scss */
 #page #page_wrapper > * {
   padding: 15px;
   display: table-cell;
 }
-/* line 62, ../sass/ace.scss */
-#page #block-region-side-pre,
-#page #block-region-side-post {
+/* line 61, ../sass/ace.scss */
+#page #page_wrapper #region-main {
+  padding: 15px 40px;
+}
+/* line 66, ../sass/ace.scss */
+#page #page_wrapper #block-region-side-pre,
+#page #page_wrapper #block-region-side-post {
   background: #FAF9F9;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
 }
-/* line 69, ../sass/ace.scss */
+/* line 74, ../sass/ace.scss */
 #page.columns-3 #block-region-side-pre, #page.columns-3 #block-region-side-post {
   width: 20%;
 }
-/* line 72, ../sass/ace.scss */
+/* line 77, ../sass/ace.scss */
 #page.columns-3 #region-main {
   width: 60%;
 }
-/* line 77, ../sass/ace.scss */
+/* line 82, ../sass/ace.scss */
 #page.columns-2 #block-region-side-pre {
   width: 20%;
 }
-/* line 80, ../sass/ace.scss */
+/* line 85, ../sass/ace.scss */
 #page.columns-2 #region-main {
   width: 80%;
 }
 
-/* line 85, ../sass/ace.scss */
+/* line 90, ../sass/ace.scss */
 #page-footer {
   border: 0;
 }
 
+/* @end */
+/* @group PostImport */
+@media (max-width: 1680px) {
+  /* line 4, ../sass/hardmedia.scss */
+  #page #page_wrapper #block-region-side-pre {
+    border-left: 0;
+  }
+  /* line 7, ../sass/hardmedia.scss */
+  #page #page_wrapper #block-region-side-post {
+    border-right: 0;
+  }
+}
 /* @end */

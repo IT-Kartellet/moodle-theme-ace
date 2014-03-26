@@ -1,0 +1,10 @@
+@media (max-width: 1680px) {
+  /* line 4, ../sass/hardmedia.scss */
+  #page #page_wrapper #block-region-side-pre {
+    border-left: 0;
+  }
+  /* line 7, ../sass/hardmedia.scss */
+  #page #page_wrapper #block-region-side-post {
+    border-right: 0;
+  }
+}
