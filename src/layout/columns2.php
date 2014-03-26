@@ -17,7 +17,7 @@
     </div>
 </header>
 
-<div id="page" class="container-fluid columns-3">
+<div id="page" class="container-fluid columns-2">
     <div id="page-content" class="row-fluid">
         <div id="page_wrapper" class="span12">
             <?php echo $OUTPUT->blocks('side-pre', '');?>
@@ -28,7 +28,6 @@
                     echo $OUTPUT->course_content_footer();
                 ?>
             </section>
-            <?php echo $OUTPUT->blocks('side-post', '');?>
         </div>
     </div>
 </div>
