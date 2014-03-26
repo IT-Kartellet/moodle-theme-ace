@@ -1,18 +1,20 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 /* line 3, ../sass/typography.scss */
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 11pt;
-  line-height: 1.5em;
+  font-family: 'Open Sans', Georgia,Cambria,"Times New Roman",Times,serif;
+  letter-spacing: .01rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10pt;
+  line-height: 1.5;
 }
 
-/* line 9, ../sass/typography.scss */
+/* line 11, ../sass/typography.scss */
 li {
   margin-bottom: 1.5em;
 }
 
-/* line 12, ../sass/typography.scss */
+/* line 14, ../sass/typography.scss */
 .block .header .title h2, .block h3, h1, h2, h3, h4, h5, h6 {
   color: #2b2b2b;
   font-size: 1.5em;

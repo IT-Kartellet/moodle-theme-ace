@@ -2,18 +2,20 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 /* line 3, ../sass/typography.scss */
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 11pt;
-  line-height: 1.5em;
+  font-family: 'Open Sans', Georgia,Cambria,"Times New Roman",Times,serif;
+  letter-spacing: .01rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10pt;
+  line-height: 1.5;
 }
 
-/* line 9, ../sass/typography.scss */
+/* line 11, ../sass/typography.scss */
 li {
   margin-bottom: 1.5em;
 }
 
-/* line 12, ../sass/typography.scss */
+/* line 14, ../sass/typography.scss */
 .block .header .title h2, .block h3, h1, h2, h3, h4, h5, h6 {
   color: #2b2b2b;
   font-size: 1.5em;
@@ -64,56 +66,58 @@ input[type='submit']:hover {
 /* line 39, ../sass/ace.scss */
 *:focus {
   outline: 0;
+  border: 0;
+  background: transparent;
 }
 
 /* @end */
 /* @group Custom */
-/* line 46, ../sass/ace.scss */
+/* line 48, ../sass/ace.scss */
 #page {
   margin: auto;
   padding: 0;
   margin-top: 20px;
 }
-/* line 51, ../sass/ace.scss */
+/* line 53, ../sass/ace.scss */
 #page #page_wrapper {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   display: table;
 }
-/* line 56, ../sass/ace.scss */
+/* line 58, ../sass/ace.scss */
 #page #page_wrapper > * {
-  padding: 15px;
+  padding: 0 15px;
   display: table-cell;
 }
-/* line 61, ../sass/ace.scss */
+/* line 63, ../sass/ace.scss */
 #page #page_wrapper #region-main {
   padding: 15px 40px;
 }
-/* line 66, ../sass/ace.scss */
+/* line 68, ../sass/ace.scss */
 #page #page_wrapper #block-region-side-pre,
 #page #page_wrapper #block-region-side-post {
   background: #FAF9F9;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
 }
-/* line 74, ../sass/ace.scss */
+/* line 76, ../sass/ace.scss */
 #page.columns-3 #block-region-side-pre, #page.columns-3 #block-region-side-post {
   width: 20%;
 }
-/* line 77, ../sass/ace.scss */
+/* line 79, ../sass/ace.scss */
 #page.columns-3 #region-main {
   width: 60%;
 }
-/* line 82, ../sass/ace.scss */
+/* line 84, ../sass/ace.scss */
 #page.columns-2 #block-region-side-pre {
   width: 20%;
 }
-/* line 85, ../sass/ace.scss */
+/* line 87, ../sass/ace.scss */
 #page.columns-2 #region-main {
   width: 80%;
 }
 
-/* line 90, ../sass/ace.scss */
+/* line 92, ../sass/ace.scss */
 #page-footer {
   border: 0;
 }
