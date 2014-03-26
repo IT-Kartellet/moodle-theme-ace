@@ -1,16 +1,15 @@
-var previewFont = function(){
-    var selectedFontsStr = $("select[name='s_theme_ace_font']").val();
-    var selectedFonts = selectedFontsStr.split(" / ");
-
-    $("#id_s_theme_ace_font_preview h1").css("font-family", selectedFonts[0]);
-    $("#id_s_theme_ace_font_preview span").css("font-family", selectedFonts[1]);
-}
-
 $(function() {
-    previewFont();
-    $("select[name='s_theme_ace_font']").change(function() {
-        previewFont();
+    function format(font) {
+        var fonts = font.id.split(' / ');
+
+        return "<b style=\"font-family: "+fonts[0]+";\">"+fonts[0]+"</b><br /><span style=\"font-family: "+fonts[1]+";\">"+fonts[1]+"</span>";
+
+        return /*"<span style=\"font-family: '"+fonts[*/font.id/*]+"';\">"+fonts[font.id]+"</span>"*/;
+    }
+
+    $("select[name='s_theme_ace_font']").select2({
+        formatResult: format,
+        formatSelection: format,
+        escapeMarkup: function(m) { return m; }
     });
-
-
 });
