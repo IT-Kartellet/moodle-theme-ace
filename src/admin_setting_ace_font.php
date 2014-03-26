@@ -42,7 +42,7 @@ class admin_setting_ace_font extends admin_setting_configselect {
             }
         }
 
-        $selecthtml = '<select id="'.$this->get_id().'" name="'.$this->get_full_name().$extraname.'" style="float: left;">';
+        $selecthtml = '<select id="'.$this->get_id().'" name="'.$this->get_full_name().$extraname.'" style="float: left; width: 200px;">';
         foreach ($this->choices as $key => $value) {
             // the string cast is needed because key may be integer - 0 is equal to most strings!
             $selecthtml .= '<option value="'.$key.'"'.((string)$key==$data ? ' selected="selected"' : '').'>'.$value.'</option>';
@@ -82,15 +82,16 @@ class admin_setting_ace_font extends admin_setting_configselect {
             $defaultinfo = $this->choices[$default];
         }
 
-        $previewHTML = '<div id="'.$this->get_id().'_preview" style="float: left; margin-left: 10px; border: 1px solid #666666; background-color: #FFFFFF; padding: 5px;">'.
-            '<h1 style="margin: 0;">Preview Heading</h1> <span>Preview Text</span>'.
-        '</div>';
-        $return = '<div class="form-select defaultsnext" style="">' . $selecthtml . $previewHTML . '</div>';
+        $return = '<div class="form-select defaultsnext" style="">' . $selecthtml . '</div>';
 
         global $CFG;
 
         // Include JS
         $wwwRoot = $CFG->wwwroot;
+
+        $injectedCSS = '<link href="'.$wwwRoot.'/theme/ace/js/select2/select2.css" rel="stylesheet"/>';
+
+        // Because this is admin settings page we assume they are accessing it via a Desktop
         $injectedJS = '<script type="text/javascript">
 WebFontConfig = {
      google: { families: [ '.join(", ", $jsLoadFonts).' ] }
@@ -104,10 +105,11 @@ wf.async = "true";
 var s = document.getElementsByTagName("script")[0];
 s.parentNode.insertBefore(wf, s);
 })(); </script>';
-        $injectedJS .= '<script type="text/javascript" src="'.$wwwRoot.'/theme/ace/js/zepto.min.js"></script>';
+        $injectedJS .= '<script type="text/javascript" src="'.$wwwRoot.'/theme/ace/js/jquery-1.11.0.min.js"></script>';
+        $injectedJS .= '<script type="text/javascript" src="'.$wwwRoot.'/theme/ace/js/select2/select2.js"></script>';
         $injectedJS .= '<script type="text/javascript" src="'.$wwwRoot.'/theme/ace/js/admin_settings_ace_general.js"></script>';
 
-        return format_admin_setting($this, $this->visiblename, $return.$injectedJS, null, true,
+        return format_admin_setting($this, $this->visiblename, $return.$injectedCSS.$injectedJS, null, true,
             $warning, null, $query);
     }
 }
