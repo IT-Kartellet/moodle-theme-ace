@@ -44,7 +44,7 @@ table {
 }
 
 /* line 21, ../sass/ace.scss */
-table.flexible th, .generaltable th, table.flexible td, .generaltable td {
+table.flexible th, .generaltable th, table.flexible td, .generaltable td, th, td {
   border: 1px solid #ccc;
 }
 
@@ -73,91 +73,95 @@ input[type='submit']:hover {
 * {
   box-sizing: border-box;
 }
-/* line 45, ../sass/ace.scss */
-*:focus {
-  outline: 0;
-  border: 0;
-  background: transparent;
+
+/* line 46, ../sass/ace.scss */
+input[type='submit']:focus, input[type='submit']:active, button:focus, button:active {
+  outline: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #0293D2 !important;
+  text-shadow: none !important;
 }
 
 /* @end */
 /* @group Layout */
-/* line 54, ../sass/ace.scss */
+/* line 58, ../sass/ace.scss */
 #page {
   margin: auto;
   padding: 0;
   margin-top: 20px;
 }
-/* line 59, ../sass/ace.scss */
+/* line 63, ../sass/ace.scss */
 #page #page_wrapper {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   display: table;
 }
-/* line 64, ../sass/ace.scss */
+/* line 68, ../sass/ace.scss */
 #page #page_wrapper > * {
   padding: 0 15px;
   display: table-cell;
 }
-/* line 69, ../sass/ace.scss */
+/* line 73, ../sass/ace.scss */
 #page #page_wrapper #region-main {
   padding: 15px 30px;
 }
-/* line 74, ../sass/ace.scss */
+/* line 78, ../sass/ace.scss */
 #page #page_wrapper #block-region-side-pre,
 #page #page_wrapper #block-region-side-post {
   background: #FAF9F9;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
 }
-/* line 82, ../sass/ace.scss */
+/* line 86, ../sass/ace.scss */
 #page.columns-3 #block-region-side-pre, #page.columns-3 #block-region-side-post {
   width: 20%;
 }
-/* line 85, ../sass/ace.scss */
+/* line 89, ../sass/ace.scss */
 #page.columns-3 #region-main {
   width: 60%;
 }
-/* line 90, ../sass/ace.scss */
+/* line 94, ../sass/ace.scss */
 #page.columns-2 #block-region-side-pre {
   width: 20%;
 }
-/* line 93, ../sass/ace.scss */
+/* line 97, ../sass/ace.scss */
 #page.columns-2 #region-main {
   width: 80%;
   border-right: 1px solid #ccc;
 }
 
-/* line 99, ../sass/ace.scss */
+/* line 103, ../sass/ace.scss */
 #page-footer {
   border: 0;
 }
 
-/* line 102, ../sass/ace.scss */
+/* line 106, ../sass/ace.scss */
 div.buttons {
   margin-top: 20px;
 }
 
 /* @end */
 /* Course */
-/* line 108, ../sass/ace.scss */
+/* line 112, ../sass/ace.scss */
 .courses .coursebox:hover, .course_category_tree .courses > .paging.paging-morelink:hover {
   background: #FAF9F9;
 }
 
-/* line 111, ../sass/ace.scss */
+/* line 115, ../sass/ace.scss */
 .coursebox > .info > .coursename a {
   background-image: none;
   padding-left: 0;
 }
 
-/* line 115, ../sass/ace.scss */
+/* line 119, ../sass/ace.scss */
 .coursebox .content .summary, .coursebox .content .coursecat {
   float: none;
   width: auto;
 }
 
-/* line 119, ../sass/ace.scss */
+/* line 123, ../sass/ace.scss */
 .coursebox {
   background: #FAF9F9;
   margin: auto;

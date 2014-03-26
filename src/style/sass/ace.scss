@@ -18,7 +18,7 @@ body {
 table {
   border-top: 1px solid #ccc;
 }
-table.flexible th, .generaltable th, table.flexible td, .generaltable td {
+table.flexible th, .generaltable th, table.flexible td, .generaltable td, th, td {
   border: 1px solid #ccc;
 }
 /* @end */
@@ -41,11 +41,15 @@ input[type='submit']:hover {
 }
 * {
   box-sizing: border-box;
-
-  &:focus {
-    outline: 0;
-    border: 0;
-    background: transparent;
+}
+input[type='submit'], button {
+  &:focus, &:active {
+    outline: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #0293D2 !important;
+    text-shadow: none !important;
   }
 }
 /* @end */
