@@ -24,8 +24,6 @@
 
 require_once($CFG->dirroot . '/theme/ace/lib.php');
 
-$settings = null;
-
 defined('MOODLE_INTERNAL') || die;
 
 if ($ADMIN->fulltree) {
@@ -34,20 +32,14 @@ if ($ADMIN->fulltree) {
     // Include custom font select field
     require_once($CFG->dirroot . '/theme/ace/admin_setting_ace_font.php');
 
-	$ADMIN->add('themes', new admin_category('theme_ace', 'Ace'));
-
-        // NOTE: error regarding style folder being writable are handled by admin_setting_ace_font.php
-
-	$mainPage = new admin_settingpage('theme_ace_main',
-			get_string('mainsettings', 'theme_ace'));
-
+    // NOTE: error regarding style folder being writable are handled by admin_setting_ace_font.php
 	// Logo file setting
 	$setting = new admin_setting_configstoredfile('theme_ace/logo',
 			get_string('logo','theme_ace'),
 			get_string('logodesc', 'theme_ace'),
 			'logo');
 	$setting->set_updatedcallback('theme_reset_all_caches');
-	$mainPage->add($setting);
+	$settings->add($setting);
 
 	// Profile pic to be displayed in header
 	$setting = new admin_setting_configcheckbox('theme_ace/profilepic',
@@ -55,7 +47,7 @@ if ($ADMIN->fulltree) {
 	    get_string('profilepicdesc', 'theme_ace'),
 	    1);
 	$setting->set_updatedcallback('theme_reset_all_caches');
-	$mainPage->add($setting);
+	$settings->add($setting);
 
 	// Custom CSS textarea
 	$setting = new admin_setting_configtextarea('theme_ace/csscustom',
@@ -63,7 +55,7 @@ if ($ADMIN->fulltree) {
 	    get_string('csscustomdesc', 'theme_ace'),
 	    '');
 	$setting->set_updatedcallback('theme_reset_all_caches');
-	$mainPage->add($setting);
+	$settings->add($setting);
 
 	// Fluid or fixed layout
 	$setting = new admin_setting_configselect('theme_ace/fluid',
@@ -73,7 +65,7 @@ if ($ADMIN->fulltree) {
 		    array('fixed' => get_string('fluid_fixed','theme_ace'),
 				 'fluid' => get_string('fluid_fluid','theme_ace')));
 	$setting->set_updatedcallback('theme_reset_all_caches');
-	$mainPage->add($setting);
+	$settings->add($setting);
 
 	// List font combinations
 	$fontCombinations = array("Fjalla One / Average",
@@ -101,7 +93,7 @@ if ($ADMIN->fulltree) {
 			array_combine($fontCombinations, $fontCombinations),
             $supportedFonts);
 	$setting->set_updatedcallback('theme_reset_all_caches');
-	$mainPage->add($setting);
+	$settings->add($setting);
 
 	// Copyright message
 	$setting = new admin_setting_configtext('theme_ace/copyright',
@@ -109,7 +101,7 @@ if ($ADMIN->fulltree) {
 			get_string('copyrightdesc', 'theme_ace'),
 			'');
 	$setting->set_updatedcallback('theme_reset_all_caches');
-	$mainPage->add($setting);
+	$settings->add($setting);
 
 	// Footer message - potentially disclaimer
 	$setting = new admin_setting_confightmleditor('theme_ace/footer',
@@ -117,33 +109,7 @@ if ($ADMIN->fulltree) {
 			get_string('footerdesc', 'theme_ace'),
 			'');
 	$setting->set_updatedcallback('theme_reset_all_caches');
-	$mainPage->add($setting);
-
-	// Layout selection - at this stage just one frame
-	// Theme colour selector
-	$setting = new admin_setting_configtext('theme_ace/colours',
-			get_string('colours','theme_ace'),
-			get_string('coloursdesc', 'theme_ace'),
-			'');
-    /* Was going to put "ace_theme_update_colours" function call here in callback function,
-    however there is no way to get result so calling it above */
-	$setting->set_updatedcallback('theme_reset_all_caches'); //ace_theme_update_colours
-	$mainPage->add($setting);
-
-	$ADMIN->add('theme_ace', $mainPage);
-
- 	// Menu editor - tree design
-	$mainPage = new admin_settingpage('theme_ace_menu',
-			get_string('menusettings', 'theme_ace'));
-
-	$setting = new admin_setting_ace_menu('theme_ace/menu',
-			get_string('menu','theme_ace'),
-			get_string('menudesc', 'theme_ace'),
-			'');
-	$setting->set_updatedcallback('theme_reset_all_caches');
-	$mainPage->add($setting);
-
-	$ADMIN->add('theme_ace', $mainPage);
+	$settings->add($setting);
 }
 
 ?>
