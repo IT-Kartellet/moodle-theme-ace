@@ -117,6 +117,7 @@ input[type='submit'], button {
 div.buttons {
   margin-top: 20px;
 }
+
 /* @end */
 
 /* Course */
@@ -134,6 +135,13 @@ div.buttons {
 .coursebox {
   background: #FAF9F9;
   margin: auto;
+}
+/* @end */
+
+/* @group Settings */
+#select2-results-1 li {
+  margin: 0;
+  border-bottom: 1px solid #ebebeb;
 }
 /* @end */
 

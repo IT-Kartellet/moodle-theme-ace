@@ -42,7 +42,7 @@ class admin_setting_ace_font extends admin_setting_configselect {
             }
         }
 
-        $selecthtml = '<select id="'.$this->get_id().'" name="'.$this->get_full_name().$extraname.'" style="float: left;">';
+        $selecthtml = '<select id="'.$this->get_id().'" name="'.$this->get_full_name().$extraname.'" style="float: left; width: 200px;">';
         foreach ($this->choices as $key => $value) {
             // the string cast is needed because key may be integer - 0 is equal to most strings!
             $selecthtml .= '<option value="'.$key.'"'.((string)$key==$data ? ' selected="selected"' : '').'>'.$value.'</option>';

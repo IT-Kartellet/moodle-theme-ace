@@ -157,27 +157,35 @@ div.buttons {
 
 /* @end */
 /* Course */
-/* line 123, ../sass/ace.scss */
+/* line 124, ../sass/ace.scss */
 .courses .coursebox:hover, .course_category_tree .courses > .paging.paging-morelink:hover {
   background: #FAF9F9;
 }
 
-/* line 126, ../sass/ace.scss */
+/* line 127, ../sass/ace.scss */
 .coursebox > .info > .coursename a {
   background-image: none;
   padding-left: 0;
 }
 
-/* line 130, ../sass/ace.scss */
+/* line 131, ../sass/ace.scss */
 .coursebox .content .summary, .coursebox .content .coursecat {
   float: none;
   width: auto;
 }
 
-/* line 134, ../sass/ace.scss */
+/* line 135, ../sass/ace.scss */
 .coursebox {
   background: #FAF9F9;
   margin: auto;
+}
+
+/* @end */
+/* @group Settings */
+/* line 142, ../sass/ace.scss */
+#select2-results-1 li {
+  margin: 0;
+  border-bottom: 1px solid #ebebeb;
 }
 
 /* @end */

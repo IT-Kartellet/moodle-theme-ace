@@ -36,7 +36,7 @@ if ($ADMIN->fulltree) {
 
 	$ADMIN->add('themes', new admin_category('theme_ace', 'Ace'));
 
-    // NOTE: error regarding style folder being writable are handled by admin_setting_ace_font.php
+        // NOTE: error regarding style folder being writable are handled by admin_setting_ace_font.php
 
 	$mainPage = new admin_settingpage('theme_ace_main',
 			get_string('mainsettings', 'theme_ace'));
