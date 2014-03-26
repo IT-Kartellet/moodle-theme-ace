@@ -38,9 +38,19 @@ body {
   box-shadow: none;
 }
 
+/* line 18, ../sass/ace.scss */
+table {
+  border-top: 1px solid #ccc;
+}
+
+/* line 21, ../sass/ace.scss */
+table.flexible th, .generaltable th, table.flexible td, .generaltable td {
+  border: 1px solid #ccc;
+}
+
 /* @end */
 /* @group Generic */
-/* line 21, ../sass/ace.scss */
+/* line 27, ../sass/ace.scss */
 input[type='submit'] {
   border: 0;
   background: none;
@@ -52,18 +62,18 @@ input[type='submit'] {
   color: #0293D2;
 }
 
-/* line 31, ../sass/ace.scss */
+/* line 37, ../sass/ace.scss */
 input[type='submit']:hover {
   background: none;
   color: #0293D2;
   text-decoration: underline;
 }
 
-/* line 36, ../sass/ace.scss */
+/* line 42, ../sass/ace.scss */
 * {
   box-sizing: border-box;
 }
-/* line 39, ../sass/ace.scss */
+/* line 45, ../sass/ace.scss */
 *:focus {
   outline: 0;
   border: 0;
@@ -72,52 +82,53 @@ input[type='submit']:hover {
 
 /* @end */
 /* @group Custom */
-/* line 48, ../sass/ace.scss */
+/* line 54, ../sass/ace.scss */
 #page {
   margin: auto;
   padding: 0;
   margin-top: 20px;
 }
-/* line 53, ../sass/ace.scss */
+/* line 59, ../sass/ace.scss */
 #page #page_wrapper {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   display: table;
 }
-/* line 58, ../sass/ace.scss */
+/* line 64, ../sass/ace.scss */
 #page #page_wrapper > * {
   padding: 0 15px;
   display: table-cell;
 }
-/* line 63, ../sass/ace.scss */
+/* line 69, ../sass/ace.scss */
 #page #page_wrapper #region-main {
   padding: 15px 40px;
 }
-/* line 68, ../sass/ace.scss */
+/* line 74, ../sass/ace.scss */
 #page #page_wrapper #block-region-side-pre,
 #page #page_wrapper #block-region-side-post {
   background: #FAF9F9;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
 }
-/* line 76, ../sass/ace.scss */
+/* line 82, ../sass/ace.scss */
 #page.columns-3 #block-region-side-pre, #page.columns-3 #block-region-side-post {
   width: 20%;
 }
-/* line 79, ../sass/ace.scss */
+/* line 85, ../sass/ace.scss */
 #page.columns-3 #region-main {
   width: 60%;
 }
-/* line 84, ../sass/ace.scss */
+/* line 90, ../sass/ace.scss */
 #page.columns-2 #block-region-side-pre {
   width: 20%;
 }
-/* line 87, ../sass/ace.scss */
+/* line 93, ../sass/ace.scss */
 #page.columns-2 #region-main {
   width: 80%;
+  border-right: 1px solid #ccc;
 }
 
-/* line 92, ../sass/ace.scss */
+/* line 99, ../sass/ace.scss */
 #page-footer {
   border: 0;
 }
@@ -132,6 +143,10 @@ input[type='submit']:hover {
   /* line 7, ../sass/hardmedia.scss */
   #page #page_wrapper #block-region-side-post {
     border-right: 0;
+  }
+  /* line 10, ../sass/hardmedia.scss */
+  #page #page_wrapper #region-main {
+    border: 0;
   }
 }
 /* @end */

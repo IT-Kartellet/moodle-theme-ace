@@ -7,4 +7,8 @@
   #page #page_wrapper #block-region-side-post {
     border-right: 0;
   }
+  /* line 10, ../sass/hardmedia.scss */
+  #page #page_wrapper #region-main {
+    border: 0;
+  }
 }

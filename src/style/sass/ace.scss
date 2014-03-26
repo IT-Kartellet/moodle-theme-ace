@@ -15,6 +15,12 @@ body {
   border-radius:0;
   box-shadow: none;
 }
+table {
+  border-top: 1px solid #ccc;
+}
+table.flexible th, .generaltable th, table.flexible td, .generaltable td {
+  border: 1px solid #ccc;
+}
 /* @end */
 
 /* @group Generic */
@@ -86,6 +92,7 @@ input[type='submit']:hover {
     }
     #region-main {
       width: 80%;
+      border-right: 1px solid #ccc;
     }
   }
 }
