@@ -21,21 +21,32 @@ table {
 table.flexible th, .generaltable th, table.flexible td, .generaltable td, th, td {
   border: 1px solid #ccc;
 }
+.section .activity .mod-indent-outer {
+  padding: 0;
+}
 /* @end */
 
 /* @group Generic */
-input[type='submit'] {
+input[type='submit'],
+input#id_submitbutton {
   border: 0;
   background: none;
+  background-color: none;
+  background-image: none;
   border-radius: 0;
   box-shadow: none;
+  text-shadow: none;
   padding: 0;
   margin: 0;
   display: block;
   color: #0293D2;
 }
-input[type='submit']:hover {
+input[type='submit']:hover,
+input#id_submitbutton:hover {
   background: none;
+  background-color: none;
+  background-image: none;
+  text-shadow: none;
   color: #0293D2;
   text-decoration: underline;
 }
