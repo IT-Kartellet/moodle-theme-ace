@@ -1,8 +1,8 @@
 /* @group PreImport */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700);
 /* line 3, ../sass/typography.scss */
 body {
-  font-family: 'Open Sans', Georgia,Cambria,"Times New Roman",Times,serif;
+  font-family: 'Droid Serif', Georgia,Cambria,"Times New Roman",Times,serif;
   letter-spacing: .01rem;
   font-weight: 400;
   font-style: normal;
