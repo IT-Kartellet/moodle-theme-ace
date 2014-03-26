@@ -155,26 +155,43 @@ div.buttons {
   margin-top: 20px;
 }
 
+/* line 120, ../sass/ace.scss */
+#logo {
+  margin: auto;
+  max-width: 220px;
+}
+
+/* line 124, ../sass/ace.scss */
+#logo_wrap {
+  text-align: center;
+}
+
+/* line 127, ../sass/ace.scss */
+header {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
 /* @end */
 /* Course */
-/* line 123, ../sass/ace.scss */
+/* line 134, ../sass/ace.scss */
 .courses .coursebox:hover, .course_category_tree .courses > .paging.paging-morelink:hover {
   background: #FAF9F9;
 }
 
-/* line 126, ../sass/ace.scss */
+/* line 137, ../sass/ace.scss */
 .coursebox > .info > .coursename a {
   background-image: none;
   padding-left: 0;
 }
 
-/* line 130, ../sass/ace.scss */
+/* line 141, ../sass/ace.scss */
 .coursebox .content .summary, .coursebox .content .coursecat {
   float: none;
   width: auto;
 }
 
-/* line 134, ../sass/ace.scss */
+/* line 145, ../sass/ace.scss */
 .coursebox {
   background: #FAF9F9;
   margin: auto;

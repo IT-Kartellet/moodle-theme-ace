@@ -11,8 +11,8 @@
 
 <header id="main_header" role="banner" class="container-fluid">
     <div class="row-fluid">
-        <a href="<?php echo $CFG->wwwroot; ?>">
-            <img id="logo" class="span3" src='<?=$CFG->wwwroot.'/theme/'.$PAGE->theme->name."/pix/logo.svg"?>'>
+        <a id="logo_wrap" class="span2" href="<?php echo $CFG->wwwroot; ?>">
+            <img id="logo" src='<?=$CFG->wwwroot.'/theme/'.$PAGE->theme->name."/pix/logo.svg"?>'>
         </a>
     </div>
 </header>
