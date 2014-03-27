@@ -9,6 +9,8 @@
 <body <?php echo $OUTPUT->body_attributes();?>>
 <?php echo $OUTPUT->standard_top_of_body_html();?>
 
+<div id="main_wrap">
+
 <header id="main_header" role="banner" class="container-fluid">
     <div class="row-fluid">
         <a id="logo_wrap" class="span2" href="<?php echo $CFG->wwwroot; ?>">
@@ -40,6 +42,8 @@
         echo $OUTPUT->standard_footer_html();
     ?>
 </footer>
+
+</div>
 
 <?php echo $OUTPUT->standard_end_of_body_html() ?>
 </body>

@@ -82,7 +82,7 @@ input[type='submit'], button {
     }
 
     #region-main {
-      padding: 15px 30px;
+      padding: 20px 30px;
     }
 
     #block-region-side-pre,
@@ -93,7 +93,7 @@ input[type='submit'], button {
     }
   }
 
-  &.columns-3 {
+  #primary_wrap.columns-3 {
     #block-region-side-pre, #block-region-side-post {
       width: 20%;
     }
@@ -101,7 +101,7 @@ input[type='submit'], button {
       width: 60%;
     }
   }
-  &.columns-2 {
+  #primary_wrap.columns-2 {
     #block-region-side-pre {
       width: 20%;
     }
@@ -127,6 +127,12 @@ div.buttons {
 header {
   padding-top: 30px;
   padding-bottom: 10px;
+}
+#primary_wrap {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 /* @end */
 

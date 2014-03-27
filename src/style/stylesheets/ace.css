@@ -118,7 +118,7 @@ input[type='submit']:focus, input[type='submit']:active, button:focus, button:ac
 }
 /* line 84, ../sass/ace.scss */
 #page #page_wrapper #region-main {
-  padding: 15px 30px;
+  padding: 20px 30px;
 }
 /* line 89, ../sass/ace.scss */
 #page #page_wrapper #block-region-side-pre,
@@ -128,19 +128,19 @@ input[type='submit']:focus, input[type='submit']:active, button:focus, button:ac
   border-right: 1px solid #ccc;
 }
 /* line 97, ../sass/ace.scss */
-#page.columns-3 #block-region-side-pre, #page.columns-3 #block-region-side-post {
+#page #primary_wrap.columns-3 #block-region-side-pre, #page #primary_wrap.columns-3 #block-region-side-post {
   width: 20%;
 }
 /* line 100, ../sass/ace.scss */
-#page.columns-3 #region-main {
+#page #primary_wrap.columns-3 #region-main {
   width: 60%;
 }
 /* line 105, ../sass/ace.scss */
-#page.columns-2 #block-region-side-pre {
+#page #primary_wrap.columns-2 #block-region-side-pre {
   width: 20%;
 }
 /* line 108, ../sass/ace.scss */
-#page.columns-2 #region-main {
+#page #primary_wrap.columns-2 #region-main {
   width: 80%;
   border-right: 1px solid #ccc;
 }
@@ -172,26 +172,34 @@ header {
   padding-bottom: 10px;
 }
 
+/* line 131, ../sass/ace.scss */
+#primary_wrap {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
 /* @end */
 /* Course */
-/* line 134, ../sass/ace.scss */
+/* line 140, ../sass/ace.scss */
 .courses .coursebox:hover, .course_category_tree .courses > .paging.paging-morelink:hover {
   background: #FAF9F9;
 }
 
-/* line 137, ../sass/ace.scss */
+/* line 143, ../sass/ace.scss */
 .coursebox > .info > .coursename a {
   background-image: none;
   padding-left: 0;
 }
 
-/* line 141, ../sass/ace.scss */
+/* line 147, ../sass/ace.scss */
 .coursebox .content .summary, .coursebox .content .coursecat {
   float: none;
   width: auto;
 }
 
-/* line 145, ../sass/ace.scss */
+/* line 151, ../sass/ace.scss */
 .coursebox {
   background: #FAF9F9;
   margin: auto;
@@ -199,7 +207,7 @@ header {
 
 /* @end */
 /* @group Settings */
-/* line 152, ../sass/ace.scss */
+/* line 158, ../sass/ace.scss */
 ul.select2-results li {
   margin: 0;
   border-bottom: 1px solid #ebebeb;
@@ -241,57 +249,92 @@ ul.select2-results li {
 
 /* line 16, ../sass/mobile.scss */
 #show_sidebar {
-  right: 33.33333433333%;
+  right: 0;
 }
 
 /* line 19, ../sass/mobile.scss */
 #show_navigation {
-  left: 33.33333433333%;
+  left: 0;
 }
 
 @media (max-width: 767px) {
-  /* line 25, ../sass/mobile.scss */
-  #page {
-    width: 100%;
-    position: relative;
+  /* line 26, ../sass/mobile.scss */
+  #main_header {
+    padding: 0;
     margin: 0;
   }
-  /* line 33, ../sass/mobile.scss */
-  #page.columns-3 #block-region-side-pre,
-  #page.columns-3 #region-main,
-  #page.columns-3 #block-region-side-post {
-    width: 33.333334333333%;
+
+  /* line 30, ../sass/mobile.scss */
+  #page {
+    margin: 0;
   }
-  /* line 39, ../sass/mobile.scss */
+  /* line 34, ../sass/mobile.scss */
   #page #page_wrapper #region-main {
-    padding: 0 10px;
+    padding: 0 20px;
   }
 
-  /* line 44, ../sass/mobile.scss */
-  body {
-    width: 300%;
-    position: absolute;
+  /* line 39, ../sass/mobile.scss */
+  #primary_wrap {
+    width: 100%;
     overflow-x: hidden;
-    left: -100%;
-    transition: all 1s;
   }
-  /* line 51, ../sass/mobile.scss */
-  body.pan-left {
+  /* line 43, ../sass/mobile.scss */
+  #primary_wrap #secondary_wrap {
+    width: 300%;
+    position: relative;
+    overflow-x: hidden;
+    margin: 0;
+    transition: all 0.5s;
+    left: -100%;
+  }
+  /* line 53, ../sass/mobile.scss */
+  #primary_wrap.pan-left #secondary_wrap {
     left: 0;
   }
-  /* line 54, ../sass/mobile.scss */
-  body.pan-right {
+  /* line 58, ../sass/mobile.scss */
+  #primary_wrap.pan-right #secondary_wrap {
     left: -200%;
   }
+  /* line 66, ../sass/mobile.scss */
+  #primary_wrap.columns-3 #block-region-side-pre,
+  #primary_wrap.columns-3 #region-main,
+  #primary_wrap.columns-3 #block-region-side-post {
+    width: 33.333334333333%;
+  }
 
-  /* line 58, ../sass/mobile.scss */
+  /* line 71, ../sass/mobile.scss */
   .visible-mobile {
     display: block;
   }
 
-  /* line 62, ../sass/mobile.scss */
+  /* line 75, ../sass/mobile.scss */
   div {
     max-width: none !important;
   }
+
+  /* line 79, ../sass/mobile.scss */
+  #logo_wrap {
+    width: 50%;
+    margin: auto;
+    display: none;
+  }
+
+  /* line 84, ../sass/mobile.scss */
+  #logo_wrap img {
+    max-width: 100%;
+  }
 }
+/* line 88, ../sass/mobile.scss */
+#mobile_header {
+  width: 100%;
+  background: #F4F4F4;
+  height: 50px;
+}
+/* line 93, ../sass/mobile.scss */
+#mobile_header > div {
+  width: 33.33333433333%;
+  float: left;
+  padding: 10px;
+}
+
 /* @end */

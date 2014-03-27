@@ -4,12 +4,26 @@
     <title><?php echo $OUTPUT->page_title();?></title>
     <link rel="shortcut icon" href="<?=$OUTPUT->favicon()?>" />
     <?php echo $OUTPUT->standard_head_html();?>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 <body <?php echo $OUTPUT->body_attributes();?>>
 <?php echo $OUTPUT->standard_top_of_body_html();?>
 
+<div id="primary_wrap" class="columns-3">
+<div id="secondary_wrap">
+
 <header id="main_header" role="banner" class="container-fluid">
+    <div id="mobile_header" class="visible-mobile">
+        <div id="mobile_header_left">
+
+        </div>
+        <div id="mobile_header_middle">
+
+        </div>
+        <div id="mobile_header_right">
+
+        </div>
+    </div>
     <div class="row-fluid">
         <a id="logo_wrap" class="span2" href="<?php echo $CFG->wwwroot; ?>">
             <img id="logo" src='<?=$CFG->wwwroot.'/theme/'.$PAGE->theme->name."/pix/logo.svg"?>'>
@@ -23,7 +37,7 @@
     <button id="show_content">Middle</button>
 </div>
 
-<div id="page" class="container-fluid columns-3">
+<div id="page" class="container-fluid">
     <div id="page-content" class="row-fluid">
         <div id="page_wrapper" class="span12">
             <?php echo $OUTPUT->blocks('side-pre', '');?>
@@ -47,6 +61,9 @@
         echo $OUTPUT->standard_footer_html();
     ?>
 </footer>
+
+</div>
+</div>
 
 <?php echo $OUTPUT->standard_end_of_body_html() ?>
 </body>

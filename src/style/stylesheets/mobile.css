@@ -18,56 +18,90 @@
 
 /* line 16, ../sass/mobile.scss */
 #show_sidebar {
-  right: 33.33333433333%;
+  right: 0;
 }
 
 /* line 19, ../sass/mobile.scss */
 #show_navigation {
-  left: 33.33333433333%;
+  left: 0;
 }
 
 @media (max-width: 767px) {
-  /* line 25, ../sass/mobile.scss */
-  #page {
-    width: 100%;
-    position: relative;
+  /* line 26, ../sass/mobile.scss */
+  #main_header {
+    padding: 0;
     margin: 0;
   }
-  /* line 33, ../sass/mobile.scss */
-  #page.columns-3 #block-region-side-pre,
-  #page.columns-3 #region-main,
-  #page.columns-3 #block-region-side-post {
-    width: 33.333334333333%;
+
+  /* line 30, ../sass/mobile.scss */
+  #page {
+    margin: 0;
   }
-  /* line 39, ../sass/mobile.scss */
+  /* line 34, ../sass/mobile.scss */
   #page #page_wrapper #region-main {
-    padding: 0 10px;
+    padding: 0 20px;
   }
 
-  /* line 44, ../sass/mobile.scss */
-  body {
-    width: 300%;
-    position: absolute;
+  /* line 39, ../sass/mobile.scss */
+  #primary_wrap {
+    width: 100%;
     overflow-x: hidden;
-    left: -100%;
-    transition: all 1s;
   }
-  /* line 51, ../sass/mobile.scss */
-  body.pan-left {
+  /* line 43, ../sass/mobile.scss */
+  #primary_wrap #secondary_wrap {
+    width: 300%;
+    position: relative;
+    overflow-x: hidden;
+    margin: 0;
+    transition: all 0.5s;
+    left: -100%;
+  }
+  /* line 53, ../sass/mobile.scss */
+  #primary_wrap.pan-left #secondary_wrap {
     left: 0;
   }
-  /* line 54, ../sass/mobile.scss */
-  body.pan-right {
+  /* line 58, ../sass/mobile.scss */
+  #primary_wrap.pan-right #secondary_wrap {
     left: -200%;
   }
+  /* line 66, ../sass/mobile.scss */
+  #primary_wrap.columns-3 #block-region-side-pre,
+  #primary_wrap.columns-3 #region-main,
+  #primary_wrap.columns-3 #block-region-side-post {
+    width: 33.333334333333%;
+  }
 
-  /* line 58, ../sass/mobile.scss */
+  /* line 71, ../sass/mobile.scss */
   .visible-mobile {
     display: block;
   }
 
-  /* line 62, ../sass/mobile.scss */
+  /* line 75, ../sass/mobile.scss */
   div {
     max-width: none !important;
   }
+
+  /* line 79, ../sass/mobile.scss */
+  #logo_wrap {
+    width: 50%;
+    margin: auto;
+    display: none;
+  }
+
+  /* line 84, ../sass/mobile.scss */
+  #logo_wrap img {
+    max-width: 100%;
+  }
+}
+/* line 88, ../sass/mobile.scss */
+#mobile_header {
+  width: 100%;
+  background: #F4F4F4;
+  height: 50px;
+}
+/* line 93, ../sass/mobile.scss */
+#mobile_header > div {
+  width: 33.33333433333%;
+  float: left;
+  padding: 10px;
 }
