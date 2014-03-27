@@ -92,25 +92,26 @@ input[type='submit'], button {
       border-right: 1px solid #ccc;
     }
   }
+}
 
-  #primary_wrap.columns-3 {
-    #block-region-side-pre, #block-region-side-post {
-      width: 20%;
-    }
-    #region-main {
-      width: 60%;
-    }
+#primary_wrap.columns-3 {
+  #block-region-side-pre, #block-region-side-post {
+    width: 20%;
   }
-  #primary_wrap.columns-2 {
-    #block-region-side-pre {
-      width: 20%;
-    }
-    #region-main {
-      width: 80%;
-      border-right: 1px solid #ccc;
-    }
+  #region-main {
+    width: 60%;
   }
 }
+#primary_wrap.columns-2 {
+  #block-region-side-pre {
+    width: 20%;
+  }
+  #region-main {
+    width: 80%;
+    border-right: 1px solid #ccc;
+  }
+}
+
 #page-footer {
   border: 0;
 }

@@ -189,52 +189,54 @@ input[type='submit']:focus, input[type='submit']:active, button:focus, button:ac
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
 }
-/* line 97, ../sass/ace.scss */
-#page #primary_wrap.columns-3 #block-region-side-pre, #page #primary_wrap.columns-3 #block-region-side-post {
+
+/* line 98, ../sass/ace.scss */
+#primary_wrap.columns-3 #block-region-side-pre, #primary_wrap.columns-3 #block-region-side-post {
   width: 20%;
 }
-/* line 100, ../sass/ace.scss */
-#page #primary_wrap.columns-3 #region-main {
+/* line 101, ../sass/ace.scss */
+#primary_wrap.columns-3 #region-main {
   width: 60%;
 }
-/* line 105, ../sass/ace.scss */
-#page #primary_wrap.columns-2 #block-region-side-pre {
+
+/* line 106, ../sass/ace.scss */
+#primary_wrap.columns-2 #block-region-side-pre {
   width: 20%;
 }
-/* line 108, ../sass/ace.scss */
-#page #primary_wrap.columns-2 #region-main {
+/* line 109, ../sass/ace.scss */
+#primary_wrap.columns-2 #region-main {
   width: 80%;
   border-right: 1px solid #ccc;
 }
 
-/* line 114, ../sass/ace.scss */
+/* line 115, ../sass/ace.scss */
 #page-footer {
   border: 0;
 }
 
-/* line 117, ../sass/ace.scss */
+/* line 118, ../sass/ace.scss */
 div.buttons {
   margin-top: 20px;
 }
 
-/* line 120, ../sass/ace.scss */
+/* line 121, ../sass/ace.scss */
 #logo {
   margin: auto;
   max-width: 220px;
 }
 
-/* line 124, ../sass/ace.scss */
+/* line 125, ../sass/ace.scss */
 #logo_wrap {
   text-align: center;
 }
 
-/* line 127, ../sass/ace.scss */
+/* line 128, ../sass/ace.scss */
 header {
   padding-top: 30px;
   padding-bottom: 10px;
 }
 
-/* line 131, ../sass/ace.scss */
+/* line 132, ../sass/ace.scss */
 #primary_wrap {
   width: 100%;
   margin: 0;
@@ -244,24 +246,24 @@ header {
 
 /* @end */
 /* Course */
-/* line 140, ../sass/ace.scss */
+/* line 141, ../sass/ace.scss */
 .courses .coursebox:hover, .course_category_tree .courses > .paging.paging-morelink:hover {
   background: #FAF9F9;
 }
 
-/* line 143, ../sass/ace.scss */
+/* line 144, ../sass/ace.scss */
 .coursebox > .info > .coursename a {
   background-image: none;
   padding-left: 0;
 }
 
-/* line 147, ../sass/ace.scss */
+/* line 148, ../sass/ace.scss */
 .coursebox .content .summary, .coursebox .content .coursecat {
   float: none;
   width: auto;
 }
 
-/* line 151, ../sass/ace.scss */
+/* line 152, ../sass/ace.scss */
 .coursebox {
   background: #FAF9F9;
   margin: auto;
@@ -269,7 +271,7 @@ header {
 
 /* @end */
 /* @group Settings */
-/* line 158, ../sass/ace.scss */
+/* line 159, ../sass/ace.scss */
 ul.select2-results li {
   margin: 0;
   border-bottom: 1px solid #ebebeb;
@@ -296,103 +298,26 @@ ul.select2-results li {
   display: none;
 }
 
-@media (max-width: 767px) {
-  /* line 8, ../sass/mobile.scss */
-  #main_header {
-    padding: 0;
-    margin: 0;
-  }
-
-  /* line 12, ../sass/mobile.scss */
-  #page {
-    margin: 0;
-  }
-  /* line 16, ../sass/mobile.scss */
-  #page #page_wrapper #region-main {
-    padding: 0 20px;
-  }
-
-  /* line 21, ../sass/mobile.scss */
-  #primary_wrap {
-    width: 100%;
-    overflow-x: hidden;
-  }
-  /* line 25, ../sass/mobile.scss */
-  #primary_wrap #secondary_wrap {
-    width: 300%;
-    position: relative;
-    overflow-x: hidden;
-    margin: 0;
-    transition: all 0.5s;
-    left: -100%;
-  }
-  /* line 35, ../sass/mobile.scss */
-  #primary_wrap.pan-left #secondary_wrap {
-    left: 0;
-  }
-  /* line 40, ../sass/mobile.scss */
-  #primary_wrap.pan-right #secondary_wrap {
-    left: -200%;
-  }
-  /* line 48, ../sass/mobile.scss */
-  #primary_wrap.columns-3 #block-region-side-pre,
-  #primary_wrap.columns-3 #region-main,
-  #primary_wrap.columns-3 #block-region-side-post {
-    width: 33.333334333333%;
-  }
-
-  /* line 53, ../sass/mobile.scss */
-  .visible-mobile {
-    display: block;
-  }
-
-  /* line 56, ../sass/mobile.scss */
-  .hidden-mobile {
-    display: none;
-  }
-
-  /* line 60, ../sass/mobile.scss */
-  div {
-    max-width: none !important;
-  }
-
-  /* line 64, ../sass/mobile.scss */
-  #logo_wrap {
-    width: 50%;
-    margin: auto;
-    display: none;
-  }
-
-  /* line 70, ../sass/mobile.scss */
-  body.pagelayout-frontpage #logo_wrap {
-    display: block;
-  }
-
-  /* line 74, ../sass/mobile.scss */
-  #logo_wrap img {
-    max-width: 100%;
-  }
-}
-/* line 78, ../sass/mobile.scss */
+/* line 7, ../sass/mobile.scss */
 #mobile_header {
   width: 100%;
   background: #F4F4F4;
   height: 50px;
   color: #69BFF1;
 }
-/* line 84, ../sass/mobile.scss */
+/* line 13, ../sass/mobile.scss */
 #mobile_header > div {
   width: 33.33333433333%;
   float: left;
   padding: 10px;
   padding-bottom: 0;
 }
-/* line 91, ../sass/mobile.scss */
+/* line 20, ../sass/mobile.scss */
 #mobile_header span {
   padding-top: 4px;
   font-size: 18px;
 }
-/* line 96, ../sass/mobile.scss */
+/* line 25, ../sass/mobile.scss */
 #mobile_header button {
   margin: 0;
   border: 0;
@@ -404,7 +329,99 @@ ul.select2-results li {
   text-shadow: none;
 }
 
-/* line 108, ../sass/mobile.scss */
+@media (max-width: 767px) {
+  /* line 40, ../sass/mobile.scss */
+  #main_header {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* line 44, ../sass/mobile.scss */
+  #page {
+    margin: 0;
+  }
+  /* line 48, ../sass/mobile.scss */
+  #page #page_wrapper #region-main {
+    padding: 0 20px;
+  }
+
+  /* line 53, ../sass/mobile.scss */
+  #primary_wrap {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  /* line 57, ../sass/mobile.scss */
+  #primary_wrap #secondary_wrap {
+    width: 300%;
+    position: relative;
+    overflow-x: hidden;
+    margin: 0;
+    transition: all 0.5s;
+    left: -100%;
+  }
+  /* line 67, ../sass/mobile.scss */
+  #primary_wrap.pan-left #secondary_wrap {
+    left: 0;
+  }
+  /* line 72, ../sass/mobile.scss */
+  #primary_wrap.pan-right #secondary_wrap {
+    left: -200%;
+  }
+  /* line 80, ../sass/mobile.scss */
+  #primary_wrap.columns-3 #block-region-side-pre,
+  #primary_wrap.columns-3 #region-main,
+  #primary_wrap.columns-3 #block-region-side-post {
+    width: 33.333334333333%;
+  }
+  /* line 88, ../sass/mobile.scss */
+  #primary_wrap.columns-2 #block-region-side-pre,
+  #primary_wrap.columns-2 #region-main,
+  #primary_wrap.columns-2 #block-region-side-post {
+    width: 50%;
+  }
+  /* line 92, ../sass/mobile.scss */
+  #primary_wrap.columns-2 #secondary_wrap {
+    width: 200%;
+  }
+
+  /* line 97, ../sass/mobile.scss */
+  .visible-mobile {
+    display: block;
+  }
+
+  /* line 100, ../sass/mobile.scss */
+  .hidden-mobile {
+    display: none;
+  }
+
+  /* line 104, ../sass/mobile.scss */
+  div {
+    max-width: none !important;
+  }
+
+  /* line 108, ../sass/mobile.scss */
+  #logo_wrap {
+    width: 50%;
+    margin: auto;
+    display: none;
+  }
+
+  /* line 114, ../sass/mobile.scss */
+  body.pagelayout-frontpage #logo_wrap {
+    display: block;
+  }
+
+  /* line 118, ../sass/mobile.scss */
+  #logo_wrap img {
+    max-width: 100%;
+  }
+
+  /* line 123, ../sass/mobile.scss */
+  #mobile_header > div {
+    width: 50%;
+  }
+}
+/* line 129, ../sass/mobile.scss */
 #mobile_middle_title {
   width: 61%;
   text-align: center;
