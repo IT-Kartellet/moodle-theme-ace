@@ -92,11 +92,22 @@
     padding-top: 4px;
     font-size: 18px;
   }
+
+  button {
+    margin: 0;
+    border: 0;
+    background: transparent;
+    color: #6DC0F1;
+    font-size: 14pt;
+    padding: 5px 10px;
+    box-shadow: none;
+    text-shadow: none;
+  }
 }
 
 #mobile_middle_title {
-  width: 45%;
+  width: 61%;
   text-align: center;
   display: inline-block;
-  margin-left: 3.5%;
+  margin-left: 8.5%;
 }

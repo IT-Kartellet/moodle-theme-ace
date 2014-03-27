@@ -99,11 +99,22 @@
   padding-top: 4px;
   font-size: 18px;
 }
+/* line 96, ../sass/mobile.scss */
+#mobile_header button {
+  margin: 0;
+  border: 0;
+  background: transparent;
+  color: #6DC0F1;
+  font-size: 14pt;
+  padding: 5px 10px;
+  box-shadow: none;
+  text-shadow: none;
+}
 
-/* line 97, ../sass/mobile.scss */
+/* line 108, ../sass/mobile.scss */
 #mobile_middle_title {
-  width: 45%;
+  width: 61%;
   text-align: center;
   display: inline-block;
-  margin-left: 3.5%;
+  margin-left: 8.5%;
 }

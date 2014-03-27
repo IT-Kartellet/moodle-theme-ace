@@ -16,15 +16,15 @@
     <div id="mobile_header" class="visible-mobile">
         <div id="mobile_header_left">
             <span class="pull-left">Menu</span>
-            <button class="pull-right navigate_content">Sidebar</button>
+            <button class="pull-right navigate_content"><i class="icon-right-open"></i></button>
         </div>
         <div id="mobile_header_middle">
-            <button class="pull-left navigate_menu">Menu</button>
+            <button class="pull-left navigate_menu"><i class="icon-menu-1"></i></button>
             <span id="mobile_middle_title">Home</span>
-            <button class="pull-right navigate_sidebar">Sidebar</button>
+            <button class="pull-right navigate_sidebar"><i class="icon-ellipsis"></i></button>
         </div>
         <div id="mobile_header_right">
-            <button class="pull-left navigate_content">Content</button>
+            <button class="pull-left navigate_content"><i class="icon-left-open"></i></button>
             <span class="pull-right">Sidebar</span>
         </div>
     </div>
