@@ -2,24 +2,6 @@
   display: none;
 }
 
-#show_navigation,
-#show_sidebar,
-#show_content
-{
-  position: absolute;
-  top: 0;
-}
-
-#show_content {
-  display: none;
-}
-#show_sidebar {
-  right: 0;
-}
-#show_navigation {
-  left: 0;
-}
-
 
 @media (max-width: 767px) {
 
@@ -71,6 +53,9 @@
   .visible-mobile {
     display: block;
   }
+  .hidden-mobile {
+    display: none;
+  }
 
   div {
     max-width: none !important;
@@ -79,7 +64,6 @@
   #logo_wrap {
     width: 50%;
     margin: auto;
-    display: none;
   }
   #logo_wrap img {
     max-width: 100%;
@@ -89,10 +73,24 @@
   width: 100%;
   background: #F4F4F4;
   height: 50px;
+  color: #69BFF1;
 
   > div {
     width: 33.33333433333%;
     float: left;
     padding: 10px;
+    padding-bottom: 0;
   }
+
+  span {
+    padding-top: 4px;
+    font-size: 18px;
+  }
+}
+
+#mobile_middle_title {
+  width: 45%;
+  text-align: center;
+  display: inline-block;
+  margin-left: 3.5%;
 }

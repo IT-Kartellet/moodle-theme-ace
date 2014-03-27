@@ -1,17 +1,15 @@
 $(function(){
 
-$("#show_navigation").click(function(e){
-  if($("#primary_wrap").hasClass("panned"))
-    $("#primary_wrap").removeClass();
-  else
-    $("#primary_wrap").removeClass().addClass("pan-left panned");
+$(".navigate_menu").click(function(e){
+  $("#primary_wrap").removeClass("pan-left pan-right").addClass("pan-left");
 });
 
-$("#show_sidebar").click(function(){
-  if($("#primary_wrap").hasClass("panned"))
-    $("#primary_wrap").removeClass();
-  else
-    $("#primary_wrap").removeClass().addClass("pan-right panned");
+$(".navigate_sidebar").click(function(){
+  $("#primary_wrap").removeClass("pan-left pan-right").addClass("pan-right");
+});
+
+$(".navigate_content").click(function(){
+  $("#primary_wrap").removeClass("pan-left pan-right");
 });
 
 });

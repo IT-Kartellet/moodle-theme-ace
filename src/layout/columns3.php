@@ -15,33 +15,35 @@
 <header id="main_header" role="banner" class="container-fluid">
     <div id="mobile_header" class="visible-mobile">
         <div id="mobile_header_left">
-
+            <span class="pull-left">Menu</span>
+            <button class="pull-right navigate_content">Sidebar</button>
         </div>
         <div id="mobile_header_middle">
-
+            <button class="pull-left navigate_menu">Menu</button>
+            <span id="mobile_middle_title">Home</span>
+            <button class="pull-right navigate_sidebar">Sidebar</button>
         </div>
         <div id="mobile_header_right">
-
+            <button class="pull-left navigate_content">Content</button>
+            <span class="pull-right">Sidebar</span>
         </div>
     </div>
-    <div class="row-fluid">
-        <a id="logo_wrap" class="span2" href="<?php echo $CFG->wwwroot; ?>">
+
+    <div class="row-fluid hidden-mobile">
+        <a id="logo_wrap" class="span2 hidden-mobile" href="<?php echo $CFG->wwwroot; ?>">
             <img id="logo" src='<?=$CFG->wwwroot.'/theme/'.$PAGE->theme->name."/pix/logo.svg"?>'>
         </a>
     </div>
 </header>
-
-<div class="visible-mobile">
-    <button id="show_navigation">Left</button>
-    <button id="show_sidebar">Right</button>
-    <button id="show_content">Middle</button>
-</div>
 
 <div id="page" class="container-fluid">
     <div id="page-content" class="row-fluid">
         <div id="page_wrapper" class="span12">
             <?php echo $OUTPUT->blocks('side-pre', '');?>
             <section id="region-main">
+                <a id="logo_wrap" class="span2" href="<?php echo $CFG->wwwroot; ?>">
+                    <img id="logo" src='<?=$CFG->wwwroot.'/theme/'.$PAGE->theme->name."/pix/logo.svg"?>'>
+                </a>
                 <?php
                     echo $OUTPUT->course_content_header();
                     echo $OUTPUT->main_content();
