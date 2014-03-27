@@ -64,6 +64,12 @@
   #logo_wrap {
     width: 50%;
     margin: auto;
+    display: none;
+  }
+  body.pagelayout-frontpage {
+    #logo_wrap {
+      display: block;
+    }
   }
   #logo_wrap img {
     max-width: 100%;

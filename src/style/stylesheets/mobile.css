@@ -67,34 +67,40 @@
   #logo_wrap {
     width: 50%;
     margin: auto;
+    display: none;
   }
 
-  /* line 68, ../sass/mobile.scss */
+  /* line 70, ../sass/mobile.scss */
+  body.pagelayout-frontpage #logo_wrap {
+    display: block;
+  }
+
+  /* line 74, ../sass/mobile.scss */
   #logo_wrap img {
     max-width: 100%;
   }
 }
-/* line 72, ../sass/mobile.scss */
+/* line 78, ../sass/mobile.scss */
 #mobile_header {
   width: 100%;
   background: #F4F4F4;
   height: 50px;
   color: #69BFF1;
 }
-/* line 78, ../sass/mobile.scss */
+/* line 84, ../sass/mobile.scss */
 #mobile_header > div {
   width: 33.33333433333%;
   float: left;
   padding: 10px;
   padding-bottom: 0;
 }
-/* line 85, ../sass/mobile.scss */
+/* line 91, ../sass/mobile.scss */
 #mobile_header span {
   padding-top: 4px;
   font-size: 18px;
 }
 
-/* line 91, ../sass/mobile.scss */
+/* line 97, ../sass/mobile.scss */
 #mobile_middle_title {
   width: 45%;
   text-align: center;
