@@ -1,8 +1,6 @@
 .visible-mobile {
-  display: none;
+  display: none !important;
 }
-
-
 
 #mobile_header {
   width: 100%;
@@ -95,10 +93,10 @@
     }
   }
   .visible-mobile {
-    display: block;
+    display: block !important;
   }
   .hidden-mobile {
-    display: none;
+    display: none !important;
   }
 
   div {
@@ -110,7 +108,8 @@
     margin: auto;
     display: none;
   }
-  body.pagelayout-frontpage {
+  body.pagelayout-frontpage,
+  body.pagelayout-login {
     #logo_wrap {
       display: block;
     }
