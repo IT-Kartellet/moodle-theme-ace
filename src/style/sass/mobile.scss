@@ -9,7 +9,7 @@
   color: #69BFF1;
 
   > div {
-    width: 33.33333433333%;
+    width: 33.33333333333%;
     float: left;
     padding: 10px;
     padding-bottom: 0;
@@ -76,7 +76,11 @@
       #block-region-side-pre,
       #region-main,
       #block-region-side-post {
-        width:33.333334333333%;
+        width:33.33333333333%;
+      }
+
+      #mobile_header_left, #mobile_header_middle, #mobile_header_right {
+        width:33.33333333333%;
       }
     }
 
@@ -122,6 +126,14 @@
         margin-top: 10px;
         padding-top: 0;
       }
+    }
+
+    .boxwidthnormal {
+      width: auto;
+    }
+
+    form legend {
+      padding-top: 20px;
     }
   }
   .visible-mobile {

@@ -41,9 +41,9 @@
         <div id="page_wrapper" class="span12">
             <?php echo $OUTPUT->blocks('side-pre', '');?>
             <section id="region-main">
-                <a id="logo_wrap" class="span2 visible-mobile" href="<?php echo $CFG->wwwroot; ?>">
-                    <img id="logo" src='<?=$CFG->wwwroot.'/theme/'.$PAGE->theme->name."/pix/logo.svg"?>'>
-                </a>
+                <!--<a id="logo_wrap" class="span2 visible-mobile" href="<?php /*echo $CFG->wwwroot; */?>">
+                    <img id="logo" src='<?/*=$CFG->wwwroot.'/theme/'.$PAGE->theme->name."/pix/logo.svg"*/?>'>
+                </a>-->
                 <?php
                     echo $OUTPUT->course_content_header();
                     echo $OUTPUT->main_content();
