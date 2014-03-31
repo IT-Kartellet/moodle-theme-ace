@@ -77,11 +77,7 @@ $string['coloursdesc'] = "This will be replaced with a colour wheel";
 
 // Footer
 $string['footer'] = "Footer";
-$string['footerdesc'] = "This HTML code will appear at the bottom of the page";
-
-// Colour selector
-$string['copyright'] = "Copyright Message";
-$string['copyrightdesc'] = "The Copyright Message will appear at the bottom of each page";
+$string['footerdesc'] = "This HTML code will appear at the bottom of the page. An example value for this could be a copyright message.";
 
 // Menu Editor
 $string['menu'] = "Menu";

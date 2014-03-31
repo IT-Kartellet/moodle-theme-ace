@@ -42,12 +42,12 @@ if ($ADMIN->fulltree) {
 	$settings->add($setting);
 
 	// Profile pic to be displayed in header
-	$setting = new admin_setting_configcheckbox('theme_ace/profilepic',
+	/*$setting = new admin_setting_configcheckbox('theme_ace/profilepic',
 		get_string('profilepic','theme_ace'),
 	    get_string('profilepicdesc', 'theme_ace'),
 	    1);
 	$setting->set_updatedcallback('theme_reset_all_caches');
-	$settings->add($setting);
+	$settings->add($setting);*/
 
 	// Custom CSS textarea
 	$setting = new admin_setting_configtextarea('theme_ace/csscustom',
@@ -58,17 +58,18 @@ if ($ADMIN->fulltree) {
 	$settings->add($setting);
 
 	// Fluid or fixed layout
-	$setting = new admin_setting_configselect('theme_ace/fluid',
+	/*$setting = new admin_setting_configselect('theme_ace/fluid',
 			get_string('fluid','theme_ace'),
 			get_string('fluiddesc', 'theme_ace'),
 			'fluid',
 		    array('fixed' => get_string('fluid_fixed','theme_ace'),
 				 'fluid' => get_string('fluid_fluid','theme_ace')));
 	$setting->set_updatedcallback('theme_reset_all_caches');
-	$settings->add($setting);
+	$settings->add($setting);*/
 
 	// List font combinations
-	$fontCombinations = array("Fjalla One / Average",
+	$fontCombinations = array("Droid Serif / serif",
+        "Fjalla One / Average",
 		"Stint Ultra Expanded / Pontano Sans",
 		"Rufina / Sintony",
 		"Clicker Script / EB Garamond",
@@ -89,17 +90,9 @@ if ($ADMIN->fulltree) {
 	$setting = new admin_setting_ace_font('theme_ace/font',
 			get_string('font','theme_ace'),
 			get_string('fontdesc', 'theme_ace'),
-			"Fjalla One / Average",
+			"Droid Serif / serif",
 			array_combine($fontCombinations, $fontCombinations),
             $supportedFonts);
-	$setting->set_updatedcallback('theme_reset_all_caches');
-	$settings->add($setting);
-
-	// Copyright message
-	$setting = new admin_setting_configtext('theme_ace/copyright',
-			get_string('copyright','theme_ace'),
-			get_string('copyrightdesc', 'theme_ace'),
-			'');
 	$setting->set_updatedcallback('theme_reset_all_caches');
 	$settings->add($setting);
 

@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700);
 
 body {
-  font-family: 'Droid Serif', Georgia,Cambria,"Times New Roman",Times,serif;
+  font-family: 'Droid Serif', Georgia,Cambria, "Times New Roman", Times, serif;
   letter-spacing: .01rem;
   font-weight: 400;
   font-style: normal;
@@ -12,6 +12,7 @@ li {
   margin-bottom: 1.5em;
 }
 .block .header .title h2, .block h3, h1, h2, h3, h4, h5, h6 {
+  font-family: serif, Georgia,Cambria, "Times New Roman", Times;
   color: #2b2b2b;
   font-size: 1.5em;
   margin-top: 20px;

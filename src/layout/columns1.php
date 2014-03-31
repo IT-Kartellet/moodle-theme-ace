@@ -7,6 +7,28 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 <body <?php echo $OUTPUT->body_attributes();?>>
+<?php if ($PAGE->theme->settings->csscustom or $PAGE->theme->settings->font): ?>
+    <style>
+        <?php
+            if ($PAGE->theme->settings->font):
+                $fontCombo = preg_split("/\//", $PAGE->theme->settings->font);
+                if ($fontCombo && is_array($fontCombo) and (sizeof($fontCombo) == 2)):
+                    $primaryFont = trim($fontCombo[0]);
+                    $secondaryFont = trim($fontCombo[1]);
+
+                    if (($primaryFont != 'Droid Serif') and ($primaryFont != 'serid')): ?>
+        body {
+            font-family: "<?php echo $primaryFont; ?>";
+        }
+        legend, label, .block .header .title h2, .block h3, h1, h2, h3, h4, h5, h6 {
+            font-family: "<?php echo $secondaryFont; ?>";
+        }
+        <?php endif; ?>
+        <?php endif; ?>
+        <?php endif; ?>
+        <?php echo $PAGE->theme->settings->csscustom; ?>
+    </style>
+<?php endif; ?>
 <?php echo $OUTPUT->standard_top_of_body_html();?>
 
 <div id="primary_wrap" class="columns-1">
@@ -42,11 +64,18 @@
 
 <footer id="page-footer">
     <div id="course-footer"><?php echo $OUTPUT->course_footer(); ?></div>
-    <p class="helplink"><?php echo $OUTPUT->page_doc_link(); ?></p>
     <?php
+    global $PAGE;
+    if ($PAGE->theme->settings->footer):
+        echo $PAGE->theme->settings->footer;
+    else:
+        ?>
+        <p class="helplink"><?php echo $OUTPUT->page_doc_link(); ?></p>
+        <?php
         echo $OUTPUT->login_info();
         echo $OUTPUT->standard_footer_html();
-    ?>
+        ?>
+    <?php endif; ?>
 </footer>
 
 </div>
