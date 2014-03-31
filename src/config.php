@@ -88,7 +88,7 @@ $THEME->layouts = array(
         'defaultregion' => 'side-pre',
     ),
     'login' => array(
-        'file' => 'columns1.php',
+        'file' => 'columns1Logo.php',
         'regions' => array(),
         'options' => array('langmenu'=>true),
     ),
