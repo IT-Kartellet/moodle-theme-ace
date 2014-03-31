@@ -165,6 +165,12 @@ ul.select2-results li {
 }
 /* @end */
 
+/* @group Settings */
+#guestlogin input {
+  display: inline;
+}
+/* @end */
+
 /* @group PostImport */
 @import 'hardmedia';
 @import 'mobile';
