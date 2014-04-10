@@ -27,10 +27,9 @@ require_once($CFG->dirroot . '/theme/ace/lib.php');
 defined('MOODLE_INTERNAL') || die;
 
 if ($ADMIN->fulltree) {
-    // Include custom menu select field
-    require_once($CFG->dirroot . '/theme/ace/admin_setting_ace_menu.php');
     // Include custom font select field
     require_once($CFG->dirroot . '/theme/ace/admin_setting_ace_font.php');
+    require_once($CFG->dirroot . '/theme/ace/admin_setting_ace_slider.php');
 
     // NOTE: error regarding style folder being writable are handled by admin_setting_ace_font.php
 	// Logo file setting
@@ -95,6 +94,16 @@ if ($ADMIN->fulltree) {
             $supportedFonts);
 	$setting->set_updatedcallback('theme_reset_all_caches');
 	$settings->add($setting);
+
+
+    // Image slider selector
+    $setting = new admin_setting_ace_slider('theme_ace/slider2',
+        get_string('slider','theme_ace'),
+        get_string('sliderdesc', 'theme_ace'),
+        'slider2');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $settings->add($setting);
+
 
 	// Footer message - potentially disclaimer
 	$setting = new admin_setting_confightmleditor('theme_ace/footer',

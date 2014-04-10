@@ -79,6 +79,11 @@ $string['coloursdesc'] = "This will be replaced with a colour wheel";
 $string['footer'] = "Footer";
 $string['footerdesc'] = "This HTML code will appear at the bottom of the page. An example value for this could be a copyright message.";
 
+// Slider
+$string['slider'] = "Image Slider";
+$string['sliderdesc'] = "These images will be used in the image slider displayed on the front page. Please note the order they are uploaded will be the order they are displayed in.";
+
+
 // Menu Editor
 $string['menu'] = "Menu";
 $string['menudesc'] = "Menu Editor";

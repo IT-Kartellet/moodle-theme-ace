@@ -89,8 +89,6 @@ class admin_setting_ace_font extends admin_setting_configselect {
         // Include JS
         $wwwRoot = $CFG->wwwroot;
 
-        $injectedCSS = '<link href="'.$wwwRoot.'/theme/ace/js/select2/select2.css" rel="stylesheet"/>';
-
         // Because this is admin settings page we assume they are accessing it via a Desktop
         $injectedJS = '<script type="text/javascript">
 WebFontConfig = {
@@ -101,15 +99,27 @@ var wf = document.createElement("script");
 wf.src = ("https:" == document.location.protocol ? "https" : "http") +
 "://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js";
 wf.type = "text/javascript";
-wf.async = "true";
+wf.async = "false";
 var s = document.getElementsByTagName("script")[0];
 s.parentNode.insertBefore(wf, s);
-})(); </script>';
-        $injectedJS .= '<script type="text/javascript" src="'.$wwwRoot.'/theme/ace/js/jquery-1.11.0.min.js"></script>';
-        $injectedJS .= '<script type="text/javascript" src="'.$wwwRoot.'/theme/ace/js/select2/select2.js"></script>';
-        $injectedJS .= '<script type="text/javascript" src="'.$wwwRoot.'/theme/ace/js/admin_settings_ace_general.js"></script>';
+})();
+(function() {
+var wf = document.createElement("script");
+wf.src = ("https:" == document.location.protocol ? "https" : "http") +
+"://code.jquery.com/jquery-1.11.0.min.js";
+wf.type = "text/javascript";
+wf.async = "false";
+wf.onload = function() {
+    $.getScript("/theme/ace/javascript/select2/select2.js" );
+    $.getScript("/theme/ace/javascript/admin_settings_ace_general.js" );
+    $("head").append("<link rel=\"stylesheet\" href=\"/theme/ace/javascript/select2/select2.css\" type=\"text/css\" />");
+};
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(wf, s);
+})();
+ </script>';
 
-        return format_admin_setting($this, $this->visiblename, $return.$injectedCSS.$injectedJS, null, true,
+        return format_admin_setting($this, $this->visiblename, $injectedJS.$return, null, true,
             $warning, null, $query);
     }
 }
