@@ -29,3 +29,6 @@ $plugin->component = 'theme_ace'; // Full name of the plugin (used for diagnosti
 $plugin->dependencies = array(
     'theme_bootstrapbase'  => 2013110500,
 );
+$plugin->maturity  = MATURITY_BETA;
+$plugin->release = 'v0.1';
+
