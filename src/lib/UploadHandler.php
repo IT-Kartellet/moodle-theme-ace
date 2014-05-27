@@ -1281,15 +1281,16 @@ class UploadHandler
                 if ($file['tmp_name']) {
                     $im = new Imagick($file['tmp_name']);
                     $im->setImageFormat("jpeg");
-                    $im->scaleImage(600, 200, true);
+                    $im->scaleImage(800, 430, true);
 
                     $blob = $im->getimageblob();
-
+/*
                     if (!array_key_exists('file_up', $_SESSION) || (!is_array($_SESSION['file_up']))) {
                         $_SESSION['file_up'] = array();
-                    }
-                    $base64Images []= sizeof($_SESSION['file_up']);
-                    $_SESSION['file_up'][] = base64_encode($blob);
+                    }*/
+//                    $base64Images []= sizeof($_SESSION['file_up']);
+//                    $_SESSION['file_up'][] = base64_encode($blob);
+                    $base64Images []= base64_encode($blob);
                 }
             }
         }

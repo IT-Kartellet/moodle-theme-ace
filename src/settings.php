@@ -24,12 +24,18 @@
 
 require_once($CFG->dirroot . '/theme/ace/lib.php');
 
+$settings = null;
+
 defined('MOODLE_INTERNAL') || die;
 
-if ($ADMIN->fulltree) {
     // Include custom font select field
     require_once($CFG->dirroot . '/theme/ace/admin_setting_ace_font.php');
     require_once($CFG->dirroot . '/theme/ace/admin_setting_ace_slider.php');
+
+    $ADMIN->add('themes', new admin_category('theme_ace', 'Ace'));
+
+    $page = new admin_settingpage('theme_ace_main',
+        get_string('mainsettings', 'theme_ace'));
 
     // NOTE: error regarding style folder being writable are handled by admin_setting_ace_font.php
 	// Logo file setting
@@ -38,7 +44,7 @@ if ($ADMIN->fulltree) {
 			get_string('logodesc', 'theme_ace'),
 			'logo');
 	$setting->set_updatedcallback('theme_reset_all_caches');
-	$settings->add($setting);
+	$page->add($setting);
 
 	// Profile pic to be displayed in header
 	/*$setting = new admin_setting_configcheckbox('theme_ace/profilepic',
@@ -46,7 +52,7 @@ if ($ADMIN->fulltree) {
 	    get_string('profilepicdesc', 'theme_ace'),
 	    1);
 	$setting->set_updatedcallback('theme_reset_all_caches');
-	$settings->add($setting);*/
+	$page->add($setting);*/
 
 	// Custom CSS textarea
 	$setting = new admin_setting_configtextarea('theme_ace/csscustom',
@@ -54,7 +60,7 @@ if ($ADMIN->fulltree) {
 	    get_string('csscustomdesc', 'theme_ace'),
 	    '');
 	$setting->set_updatedcallback('theme_reset_all_caches');
-	$settings->add($setting);
+	$page->add($setting);
 
 	// Fluid or fixed layout
 	/*$setting = new admin_setting_configselect('theme_ace/fluid',
@@ -64,7 +70,7 @@ if ($ADMIN->fulltree) {
 		    array('fixed' => get_string('fluid_fixed','theme_ace'),
 				 'fluid' => get_string('fluid_fluid','theme_ace')));
 	$setting->set_updatedcallback('theme_reset_all_caches');
-	$settings->add($setting);*/
+	$page->add($setting);*/
 
 	// List font combinations
 	$fontCombinations = array("Droid Serif / serif",
@@ -93,17 +99,7 @@ if ($ADMIN->fulltree) {
 			array_combine($fontCombinations, $fontCombinations),
             $supportedFonts);
 	$setting->set_updatedcallback('theme_reset_all_caches');
-	$settings->add($setting);
-
-
-    // Image slider selector
-    $setting = new admin_setting_ace_slider('theme_ace/slider2',
-        get_string('slider','theme_ace'),
-        get_string('sliderdesc', 'theme_ace'),
-        'slider2');
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $settings->add($setting);
-
+	$page->add($setting);
 
 	// Footer message - potentially disclaimer
 	$setting = new admin_setting_confightmleditor('theme_ace/footer',
@@ -111,7 +107,22 @@ if ($ADMIN->fulltree) {
 			get_string('footerdesc', 'theme_ace'),
 			'');
 	$setting->set_updatedcallback('theme_reset_all_caches');
-	$settings->add($setting);
-}
+	$page->add($setting);
+
+    $ADMIN->add('theme_ace', $page);
+
+    $sliderPage = new admin_settingpage('theme_ace_menu',
+        get_string('slidersettings', 'theme_ace'));
+
+    // Image slider selector
+    $setting = new admin_setting_ace_slider('theme_ace/slider2',
+            get_string('slider','theme_ace'),
+            get_string('sliderdesc', 'theme_ace'),
+            'slider');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $sliderPage->add($setting);
+
+    $ADMIN->add('theme_ace', $sliderPage);
+
 
 ?>

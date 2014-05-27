@@ -67,6 +67,9 @@ input[type='submit'], button {
     text-shadow: none !important;
   }
 }
+.redirectmessage {
+  text-align: center;
+}
 /* @end */
 
 /* @group Layout */
@@ -166,6 +169,12 @@ header {
 ul.select2-results li {
   margin: 0;
   border-bottom: 1px solid #ebebeb;
+}
+/* @end */
+
+/* @group Login */
+#password {
+  padding-top: 0;
 }
 /* @end */
 

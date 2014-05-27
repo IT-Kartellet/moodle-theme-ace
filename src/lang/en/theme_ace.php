@@ -30,6 +30,7 @@ $string['choosereadme'] = 'This is the Ace theme';
 
 $string['mainsettings'] = 'General';
 $string['menusettings'] = 'Menu';
+$string['slidersettings'] = 'Slider';
 
 // Settings page strings
 $string['css_dir_permission_error'] = "The theme CSS directory is not writable. To allow this settings page to generate the relevant CSS please make theme/ace/style/ and/or theme/ace/style/ace.css writable.";
