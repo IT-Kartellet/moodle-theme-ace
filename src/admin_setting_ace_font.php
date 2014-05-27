@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * Ace font selection page. Features font previews.
+ *
+ * @package    theme_ace
+ * @copyright  2014 IT-Kartellet
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 class admin_setting_ace_font extends admin_setting_configselect {
     private $supportedFonts;
     private $updateError;

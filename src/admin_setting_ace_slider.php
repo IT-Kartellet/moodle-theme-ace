@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * Ace theme settings page
+ *
+ * @package    theme_ace
+ * @copyright  2014 IT-Kartellet
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 class admin_setting_ace_slider extends admin_setting_configselect {
     public function __construct($name, $visiblename, $description, $defaultsetting) {
         parent::__construct($name, $visiblename, $description, $defaultsetting, null);
