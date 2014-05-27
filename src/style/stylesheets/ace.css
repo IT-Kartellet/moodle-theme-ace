@@ -661,6 +661,9 @@ ul.select2-results li {
       width: 50%; }
     #primary_wrap.columns-2 #secondary_wrap {
       width: 200%; }
+    #primary_wrap.columns-2 #page-footer {
+      width: 50%;
+      margin-left: 50%; }
     #primary_wrap.columns-1 #block-region-side-pre,
     #primary_wrap.columns-1 #region-main,
     #primary_wrap.columns-1 #block-region-side-post {

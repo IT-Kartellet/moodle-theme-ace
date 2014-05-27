@@ -23,7 +23,7 @@
         <div id="mobile_header_middle">
             <button class="pull-left navigate_menu"><i class="icon-menu-1"></i></button>
             <span id="mobile_middle_title">Home</span>
-            <button class="pull-right navigate_sidebar">ITK</button>
+            <button class="pull-right navigate_sidebar"><i class="icon-ellipsis"></i></button>
         </div>
         <div id="mobile_header_right">
             <button class="pull-left navigate_content"><i class="icon-left-open"></i></button>
