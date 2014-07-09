@@ -28,7 +28,7 @@
 
     <div class="row-fluid hidden-mobile">
         <a id="logo_wrap" class="span2 hidden-mobile" href="<?php echo $CFG->wwwroot; ?>">
-            <?php if ($PAGE->theme->settings->logo): ?>
+            <?php if (isset($PAGE->theme->settings->logo)): ?>
                 <?php
                 $fs = get_file_storage();
                 $files = $fs->get_area_files(1, 'theme_ace', 'logo', 0, 'filesize DESC');

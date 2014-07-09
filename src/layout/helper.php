@@ -23,7 +23,7 @@ function getAceFontCSS() {
 function getAceCSS() {
     global $PAGE;
 
-    if ($PAGE->theme->settings->csscustom or $PAGE->theme->settings->font) {
+    if (isset($PAGE->theme->settings->csscustom) or isset($PAGE->theme->settings->font)) {
         $inlineCSS = "<style>\n";
         $fonts = getAceFontCSS();
 
@@ -47,7 +47,7 @@ function getAceFooter() {
 	$html = '<footer id="page-footer">
     <div id="course-footer">'.$OUTPUT->course_footer().'</div>';
     
-	if ($PAGE->theme->settings->footer) {
+	if (isset($PAGE->theme->settings->footer)) {
         	$html .= $OUTPUT->login_info();
 	        $html .= $PAGE->theme->settings->footer;
     	} else {
